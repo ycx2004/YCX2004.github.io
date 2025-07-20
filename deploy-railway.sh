@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "🚀 开始部署到 Railway..."
+echo "🚀 开始部署到 Railwaystation..."
 
 # 检查是否安装了 Railway CLI
 if ! command -v railway &> /dev/null; then
