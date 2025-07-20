@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: video-subtitle-translator
+    env: node
+    buildCommand: npm install && cd server && npm install && npm run build
+    startCommand: npm run start:prod
+    envVars:
+      - key: BAIDU_APP_ID
+        sync: false
+      - key: BAIDU_API_KEY
+        sync: false
+      - key: BAIDU_SECRET_KEY
+        sync: false
+      - key: TENCENT_SECRET_ID
+        sync: false
+      - key: TENCENT_SECRET_KEY
+        sync: false 
